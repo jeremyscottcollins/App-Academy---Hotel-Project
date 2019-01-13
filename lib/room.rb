@@ -4,13 +4,7 @@ class Room
         @occupants = []
     end
 
-    def capacity
-        @capacity
-    end
-
-    def occupants
-        @occupants
-    end
+    attr_reader :capacity, :occupants
 
     def full?
         return false if @occupants.length < @capacity
